@@ -1,0 +1,199 @@
+.loucura{
+    color:#0000ff;
+    background-color:#ffff00;
+}
+.chatisse{
+    color:rgb(155,206,98);
+}
+#a{
+    color:rgb(155,15,160);
+}
+#b{
+    color:rgb(160,202,198);
+}
+#ba{
+    color:#ffff00;
+}
+#bb{
+    color:#ffff00;
+}
+#c{
+    color:aquamarine;
+}
+#d{
+    color:rosybrown;
+}
+#cachorrao{
+    color:black;
+    background-image:urL(./fundos/oi/fundo01.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+
+
+}
+#cachorrinho{
+    color:white;
+    background-color:#ff0000;
+
+}
+#cm{
+    background-color:red;
+    width:1cm;
+    height:1cm;
+}
+#mm{
+    background-color:blue;
+    width:1mm;
+    height:1mm;
+}
+#in{
+    background-color:red;
+    width:1in;
+    height:1in;
+}
+#px{
+    background-color:blue;
+    width:1px;
+    height:1px;
+}
+#pt{
+    background-color:red;
+    width:1pt;
+    height:1pt;
+}
+#pc{
+    background-color:blue;
+    width:1pc;
+    height:1pc;
+}
+
+.container{
+    font-size:25px; /*esse é um atributo p/ fonte 
+    será visto aposteriore */
+    background-color:red;
+    width:300px;
+}
+.inside{
+    font-size:2em; 
+    
+    /* "em" é a primeira unidade relativa 
+    apresentada, o tamanho do texto padrão é 16pixels e 
+    o EM faz com que a nossa fonte seja do tamanho da 
+    "fonte mãe" que é a CONTAINER, assim o tamanho da 
+    INSIDE muda de acordo com o da CONTAINER
+       */
+    
+       background-color:blue;
+    width:1em; 
+    
+    /* o "em" é sempre relativo há fonte, 
+    nesse caso relativo a fonte do INSIDE que
+    é relativa a fonte do CONTAINER, ou seja,
+    1 em no width do inside = 2em na font-size 
+     do inside = 100 px, porque 1 em no font-size do
+    inside = 25px = font-size do CONTAINER;
+    Mais importante: 1em do font-size no inside 
+    DIFERENTE 1em do width no inside
+    */
+}
+
+#goias{
+    background-color:green;
+    width:60vh;
+    height: 50px;
+}
+#vila{
+    background-color: red;
+    width:45vh;
+    height: 50px;
+}
+/*  Margin x Padding
+Margin: distância um elemento nas suas bordas pra FORA
+- essa borda é a divisão de linhas. Caso queira Margin
+pra todos os lados ao mesmo tempo, só usa Margin, senão
+especifica se quer a esquerda, etc.
+
+Padding: distância um elemento nas suas pra DENTRO - 
+aumentando a marcação
+*/
+
+#base{
+    height:10px;
+    background-color:green;
+    padding-bottom: 50px;
+}
+#basedois{
+    height:10px;
+    background-color:red;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+/* bordas:
+border-width - expessura da borda;
+borda-style - estilo da borda - precisa desse 
+elemento p/ aparecer a borda;
+
+border-radius - pra arredondar a borda;
+OBS: Posso aplicar a cor só em uma borda (superior, inferio, esquerda e direita)
+Usando border-top(defino o local)-color:COr;
+Também posso ter bordas colorias:
+border-color: CORdaBordaSuperior CORdaBordaDIREITA CORdaBordaInferio CORdaBordaEsquerda
+Isso também serve pra outras propriedades, assim é
+possível modificar o tamanho da linha de cada lado da borda;
+
+*/
+
+.bordas{
+    border-width: 5px; 
+    border-style: solid;
+    border-bottom-color: royalblue;
+    border-radius:10px;
+
+}
+.quadrado{
+    width:100px;
+    height: 100px;
+    background-color:purple;
+    border-width:10px 15px 20px 5px;
+    border-style: solid;
+    border-color:blue green yellow red;
+
+}
+
+/* Se quiser fazer um Cirulo, pode-se usar a unidade %
+somente com o atributo boder-radius:50% já se faz;
+*/
+
+.circulo{
+    width:100px;
+    height: 100px;
+    background-color:yellow;
+    border-radius: 50%;
+}
+
+/*
+tipos de Borda::
+Alem dessas tem o None e o Hidden que é sem borda
+    Hidden X None
+        Hidden: como se o elemento estivesse na tela, mas não aparece;
+        None: ele não está na tela nem aparece nela.
+*/
+.dotted{
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+/*
+O jeito mais fácil de criar bordas:
+Vc simplesmente declara border: expessura estilo cor;
+
+*/
+
+.borda{
+    border: 10px dashed green;
+
+}

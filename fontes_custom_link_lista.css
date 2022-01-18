@@ -1,0 +1,278 @@
+
+/*
+Posso mudar a cor do texto com color:cor desejada;
+Também mudar a formatação do texto (lembrando que o padrão
+é a esquerda)
+a direita - text-aling: right;
+centralizado - text-aling: center;
+justificado - text-aling:justify;
+
+Outra proŕiedade do texto é o text-transform;
+Caixa-Alto: uppercase;
+minusculo: lawercase;
+primeira letra de cada palavra maiscula: capitalize;
+
+Podemos também colocar um espaço no inicio do paragráfo
+com text-ident: tamanho;
+
+Tambem podemos colocar sublinhado, negrito, etc - com
+text-decorantion
+sublinhado=underline;
+superlinhado(linah em cima)=overline;
+tachado=line-through;
+
+Podemos juntar esses tipos só acresentar mais de uma decoração
+usando o espaço
+text-decorantion: underline overline
+
+OBS.: Podemos usar o none, pra não dar nenhuma decoração tbm,
+como no caso de links que vem sublinhado
+
+Também tem o espaço entre as letras - letter-spacing:tamanhodesejado;
+Obs.: por padrão o letter-spacing é 0 e podemos colocar 
+valores negativos, assim sobrepondo as linhas 
+
+Além disso podemos definir o tamanho da linha:
+line-height:tamanho desejado
+    OBS.: esse tamanho pode ser referenciado pelo tamanho
+    da fonte. Só usar 1 (sem unidades) ou 2 que ele vai deixar
+    do tamanho da fonte ou o dobro, também pode-se usar
+    % em relação ao tamnho da fonte;
+
+
+
+
+Podemos definir a distância de uma palava e outra com 
+WordSpace:tamanhodesejado
+
+Também podemos criar uma sobra no nosso texto
+text-shadow: descolamento pra direita descolamento pra baixo raio do desfoque cor;
+
+
+
+
+
+*/
+
+.cachorrao{
+    color:hotpink;
+    text-align:justify;
+    text-transform: capitalize;
+    text-indent: 35px;
+    text-decoration: underline overline;
+    letter-spacing: 1.2px;
+    line-height: 150%;
+    word-spacing:12px;
+    text-shadow: 2px 2px 5px black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/*
+Exitem basicamente 3 fámilias genericas de fontes:
+1ª - serifada (com serifas), ex.: times new roman;
+2ª sem serifa, ex.: arial;
+3ªMonospace;
+Posso trocar a fonte usando:
+font-family:arial;
+só que se eu usar uma fonte inestixtenet vai rodar a padrão
+
+ex.:
+font-family:programadorBR;
+posso adicionar uma fonte existente na frente, uma que fiz dowload
+ex.:
+font-family:programadorBR,"Times New Roman";
+    OBS.: Usa a virgula pra separar uma fonte ou outra 
+    usa-se o "" pra declarar nomes compostos
+    Esse recurso é importante porque nem todo pc tem as 
+    mesmas fontes;
+Caso o PC não tenha nenhuma dessas fontes?
+Usa-se o sans-serit, serit ou monospace
+ex.:
+font-family: programadorBR, Beta, sans-serit;
+
+Também pode se alterar o estilo da fonte:
+font-style:italic;
+
+Pra definir Negrito e tals, usa-se:
+font-weinght: valor que varia de 0 a 900
+    sendo 700 - negrito ou bold
+    400 - normal
+    Obs.: Isso varia de fámilia pra familia
+
+pra alterar o tamanho usa-se:
+font-sinze
+
+
+Por último uma coisa que não é muito usada, mas parece
+o Não Lembro o nome, ele deixa as letras tudo MAISCULA, 
+mas descata as letras que estavam inicialmente maisculas
+deixando elas maiores
+font-variant:small-caps;
+*/
+
+.tiao{
+    font-family: Alfa, heelsback, monospace;
+    font-style:italic;
+    font-weight:bold;
+    font-size: 25px;
+    font-variant: small-caps;
+
+}
+.oi{
+    font-family: 'Pacifico', cursive;
+}
+.customfonts{
+    font-family: 'VT323', monospace;
+}
+#ui{
+    color:brown;
+    background-color: burlywood;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-family: beloved-cheryl,monospace ;
+    padding:10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#ui:hover{
+    color:brown;
+    background-color: white;
+    font-size: 100px;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-family: chasti, Times, serif;
+    padding:10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*
+Vamos usar o @font-face p/ cadastrar fontes que eu fiz o dowload
+inicialmente preenchemos o font-family que é o nome que vou chamar minha fonte;
+depois localizamos nossa fonte pelo url;
+*/
+
+@font-face {
+    font-family: beloved-cheryl;
+    src: url(./fontes/beloved-cheryl-personal-use/Beloved\ Cheryl\ -\ Personal\ Use.ttf);
+}
+@font-face {
+    font-family: chasti ;
+    src: url(./fontes/chasti/Chasti.ttf);
+}
+
+
+/*
+Estados do link:
+1ª Sem clicar nele (padrão) - #nomedoID:link{
+                                            }
+                                            Obs: Não é preciso declar :link, pois é o padrão
+2ª Quando passa o mouse por cima(Evento Hover)- #nomedoID:hover{
+                                                                }
+3ª Quando Clica nele (active) - #nomedoID: link:active{
+                                                        }
+
+4ª Foi visitado(visited): 
+Pra alterar isso usar visited, assim - #nomedoID:visited{
+                                                        }
+
+*/
+.link0{
+    color:white;
+    background:black;
+    padding:10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 2px solid gold;
+}
+.link0:hover{
+    background: white;
+    color:black;
+    border: 5px solid black;
+    font-size: 20px;
+}
+
+#link1{
+    color:white;
+    cursor:crosshair;/*propriedade que muda o tipo de cursor, tem vários tipos - esse é de cruz*/
+    background:red;
+    padding:10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+
+
+
+
+}
+#link1:visited{
+    color:yellow;
+}
+#link1:hover{
+    background: transparent;
+}
+
+
+#link2{
+    color: tomato;
+    cursor:unset;/*propriedade que muda o tipo de cursor, tem vários tipos - esse é de cruz*/
+    background: white;
+    padding:10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+#link2:active{
+    background: yellow;
+}
+
+/*
+list-style-type é a função que coloca o estilo do marcador
+da lsta.
+P/ lista NÃO ORDENADA temos: 
+none(sem nada), circule (circulo), disc (disco, padrão),
+square(quadrado)
+P/ lista Ordenada temos:
+upper-roman (numeros romanos em MAISCULO), lower-roman (romano em minusculo),
+lower e upper - alfa ( que é o ABC - maisculo e minusculo),
+
+OBS.: tem muitos estilos, esses são os mais comuns;
+
+
+Posso colocar uma imagem também com 
+list-style-image:url();
+
+Ao adicionar uma borda no item eu percebo que o marcador está fora da lista, eu posso colocar ele dentro, com:
+list-style-position: inside(dentro); ou outside(fora-parão);
+De resto vai usando o margin, padding, etc, para estilizar;
+
+*/
+
+ul{
+   list-style-image: url(/fundos/marcadores/marcador02.png);
+   list-style-position: inside;
+   margin: 0;
+   padding: 10px;
+   background:blanchedalmond;
+}
+
+ol{
+    list-style-type: lower-roman;
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+    background:rgb(135, 124, 156);
+    }
+li{
+    border: 1px solid black;
+    background: brown;
+    margin: 10px;
+    padding: 5px;
+}

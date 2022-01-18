@@ -1,0 +1,63 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: black;
+    /* se usasse só background ia dar ruim, tudo ia ficar preto*/
+}
+
+/* 
+Minha divisão de pasta:
+PastaPessoal -> Documentos -> ProgramadorBR -> Módulo 02-CSS-Básico -> Desafio -> Esse aquivo
+. signfica que está no nível do doc que estou trabalhando, ou seja, estou me referindo aos aquivos dentro da pasta Desafio;
+Ao inserir 
+.. significa que estou 2 niveis acima, ou seja, estou me referindo aos arquivos dentro da pasta Módulo02-CSS-Básico
+../../ significa que estou 3 niveis acima, ou seja, estou me referindo aos aquivos dentro da pata ProgramadorBR
+E a partir disso usa-se o ../ pra subir de nível
+
+Se só usar o / o programa fica confuso se está no mesmo nível ou a um nível acima e isso pode quebrar o site
+
+*/
+
+div{
+    background-image: url(./Imagens/backgorund.png); /* o cara usou só background:url(urldaimagem);*/
+    background-size:cover;
+    background-position: center;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 200px;
+    padding: 1px 20px;
+    margin:auto; /* centraliza o background*/
+    margin-top: 10%; /* fica relativo ao tamanho da página*/
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+#um{
+    list-style-image: url(../Desafio/Imagens/Insta.png);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+#dois{
+    list-style-image: url(./Imagens/Twitter.png);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+#tres{
+    list-style-image: url(./Imagens/Youtube.png);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color:black;
+}

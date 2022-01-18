@@ -1,0 +1,154 @@
+/*
+Primeiramente o body já tem uma margem e preenchimento 
+então vamos retirar eles. É só colocar o Body como comentário
+pra ver a diferença.
+*/
+body{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background-color: red;
+    padding:10px;
+    border: 5px solid yellow;
+    margin: 5px;
+
+}
+
+.conteudo{
+    background-color:rgb(225,225,225);
+    padding:5px;
+    outline: 5px solid black;
+
+}
+
+/*
+body{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background-color: red;
+}
+
+.conteudo{
+    background-color: blue;
+}
+Nesse exemplo de cima temos que notar que
+já que tirei todo a margem e o preenchimento
+o azul do conteudo sobre-pós totalmente
+o do container, assim ao colocar o
+preenchimento, depois a borda e por último
+a marge(que vai afastar o contéudo)- desse jeito fica visual o que cada um é
+Assim::
+
+.container{
+    background-color: red;
+    padding:5px;
+    border: 5px solid yellow;
+    margin: 5px;
+
+}
+
+.conteudo{
+    background-color: blue;
+}
+
+Agora eu posso adicionar o preenchimento e as bordas na
+class conteudo, ficando assim:
+
+.container{
+    background-color: red;
+    padding:5px;
+    border: 5px solid yellow;
+    margin: 5px;
+
+}
+
+.conteudo{
+    background-color:rgb(225,225,225);
+    padding:5px;
+    border: 5px solid black;
+
+
+}
+
+*/
+
+
+
+/* 
+Outro elemento interessante é o Out-Line que é igual a
+uma borda, porém não faz parte do Box Model, assim ele
+sobrepõem as coisas; ou seja se eu tivesse um outline
+ao inves de uma borda ficaria assim:
+
+.conteudo{
+    background-color:rgb(225,225,225);
+    padding:5px;
+    outline: 5px solid black;
+
+}
+
+se desmarca vai notar que sobrepós o preenchimento 
+da class container se aumentar a borda da class 
+container vai perceber que ela ainda está ali, 
+porém sobreposta em certas partes, assim:
+
+.container{
+    background-color: red;
+    padding:10px;
+    border: 5px solid yellow;
+    margin: 5px;
+
+}
+
+.conteudo{
+    background-color:rgb(225,225,225);
+    padding:5px;
+    outline: 5px solid black;
+
+}
+*/
+
+.quadrado{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    border: 10px solid black;
+    padding: 10px;
+}
+.quadradodecomparaçao{
+    width: 140px;
+    height: 140px;
+    background-color: greenyellow;
+}
+.forçandotamanho{
+    width:100px;
+    height: 100px;
+    background-color:gray;
+    border: 10px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 10px;
+
+}
+.comparaçao2{
+    width:100px;
+    height: 100px;
+    background-color:hotpink;
+
+}
+
+/*
+NOte que toda vez que adiciona bordas e padding o meu
+quadrado original de 100px agr tem 140px, pois soma
+10x4(2 de cada lado da borda + 2 de cada lado do padding).
+Isso pode atrapalhar muito nos desings de sites.
+
+Só que tem uma maneira pra eu forçar ficar do tamanho
+que quero usando o comando - box-sinzing:boder-box; 
+Assim nosso tamanho fica limitado ao da borda
+*/
